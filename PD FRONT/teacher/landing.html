@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Professor - Main</title>
+	<link rel = "stylesheet" type = "text/css" href = "https://web.njit.edu/~pnd23/css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+</head>
+
+<body>
+<div class="grid">
+	<div class="header">
+		<div class="navbar">
+			<div class="user-name">
+				<a id="userid">Professor ID</a>
+			</div>
+
+			<div class="menu">
+				<ul class="ul-bar">
+						<li class="li-link" style="font-family: 'Quattrocento Sans', sans-serif;"><a href="javascript:goTo('landing.html')">Home</a></li>
+						<li class="li-link" style="font-family: 'Quattrocento Sans', sans-serif;"><a href="javascript:goTo('create_question.html')">Create Question</a></li>
+						<li class="li-link" style="font-family: 'Quattrocento Sans', sans-serif;"><a href="javascript:goTo('create_exam.html')">Create Exam</a></li>
+						<li class="li-link" style="font-family: 'Quattrocento Sans', sans-serif;"><a href="javascript:logOut()">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container-full">
+			<div class="container-title">
+				<div class="caption">
+					<span class="caption-title" style="font-family: 'Alfa Slab One'"> Created Exams</span>
+				</div>
+			</div>
+			<div class="container-body">
+				<table>
+					<col width="30%">
+					<col width="30%">
+					<col width="20%">
+					<col width="20%">
+					<thead>
+						<tr>
+							<th style="font-family: 'Quattrocento Sans', sans-serif;">Exam Name</th>
+							<th style="font-family: 'Quattrocento Sans', sans-serif;">Exam Status</th>
+							<th style="font-family: 'Quattrocento Sans', sans-serif;">Review</th>
+							<th style="font-family: 'Quattrocento Sans', sans-serif;">Release Score</th>
+						</tr>
+					</thead>
+					<tbody id="exam_table">
+
+					</tobdy>
+
+				</table>
+			</div>
+		</div>
+	</div>
+	<!--Main End-->
+	<div class="footer">
+	</div>
+	<!--Footer End-->
+</div>
+
+
+</body>
+<script type="text/javascript" src="https://web.njit.edu/~pnd23/main.js"></script>
+<script type="text/javascript" src="https://web.njit.edu/~pnd23/teacher/teacher.js"></script>
+
+</html>

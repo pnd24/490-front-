@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Student - Exam</title>
+	<link rel = "stylesheet" type = "text/css" href = "https://web.njit.edu/~pnd23/css/style.css" />
+</head>
+
+<body>
+<div class="grid">
+	<div class="header">
+		<div class="navbar">
+			<div class="user-name">
+				<a id="userid">Professor ID</a>
+			</div>
+
+			<div class="menu">
+				<ul class="ul-bar">
+						<li class="li-link"><a href="javascript:goTo('landing.html')">Home</a></li>		
+						<li class="li-link"><a href="javascript:goTo('create_question.html')">Create Question</a></li>
+						<li class="li-link"><a href="javascript:goTo('create_exam.html')">Create Exam</a></li>
+						<li class="li-link"><a href="javascript:logOut()">Log out</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="question-list" class="main">
+		<div class="question-container" style="height: 60px;">
+			<div class="container-title">
+				<div class="caption">
+        <label class="label"> Exam Name: </label>
+					<span class="text" style="font-size: 20px" id="exam_name"> Exam </span>
+         <label class="label"> Student Name: </label>       
+          <span class="text" style="font-size: 20px" id="student_name"> Student</span>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+				<form>
+					<div style="text-align: center;">
+               <div style="text-align: center">
+               <input type="text" id="submit_exam" readonly style="display:none">
+               </div>
+						<input class="button" type="button" value="Update" onClick="updateStudentExam()" style="margin-bottom:30px;">
+					
+          </div>
+           <div style="text-align: center;">
+                <div id="status"></div>
+           </div>
+				</form>
+			</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="https://web.njit.edu/~pnd23/main.js"></script>
+<script type="text/javascript" src="https://web.njit.edu/~pnd23/teacher/reviewExam.js"></script>
+</html>
